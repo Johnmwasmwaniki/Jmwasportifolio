@@ -16,32 +16,29 @@
 \*-----------------------------------*/
 
 :root {
+  /* Modern Light Theme Colors */
+  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(210, 40%, 96%) 0%, hsl(210, 40%, 92%) 100%);
+  --bg-gradient-jet: linear-gradient(to bottom right, hsla(0, 0%, 100%, 0.8), hsl(210, 40%, 98%));
+  --bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(204, 100%, 66%) 0%, hsla(204, 100%, 66%, 0) 50%);
+  --bg-gradient-yellow-2: linear-gradient(135deg, hsla(204, 100%, 66%, 0.3), hsla(204, 100%, 66%, 0) 60%), hsl(0, 0%, 100%);
+  --border-gradient-onyx: linear-gradient(to bottom right, hsl(210, 15%, 85%) 0%, hsla(210, 15%, 85%, 0) 50%);
+  --text-gradient-yellow: linear-gradient(to right, hsl(204, 100%, 66%), hsl(204, 100%, 58%));
 
-  /* Updated color palette for a more professional look */
+  --jet: hsl(210, 10%, 80%);
+  --onyx: hsl(210, 10%, 70%);
+  --eerie-black-1: hsl(210, 10%, 90%);
+  --eerie-black-2: hsl(210, 10%, 95%);
+  --smoky-black: hsl(0, 0%, 100%);
+  --white-1: hsl(0, 0%, 0%);
+  --white-2: hsl(0, 0%, 10%);
+  --orange-yellow-crayola: hsl(204, 100%, 55%);
+  --vegas-gold: hsl(204, 80%, 40%);
+  --light-gray: hsl(210, 10%, 40%);
+  --light-gray-70: hsla(210, 10%, 40%, 0.7);
+  --bittersweet-shimmer: hsl(0, 100%, 70%);
 
-  --bg-gradient-onyx: linear-gradient(to bottom right, hsl(220, 13%, 28%) 3%, hsl(220, 13%, 18%) 97%);
-  --bg-gradient-jet: linear-gradient(to bottom right, hsla(220, 13%, 22%, 0.3) 0%, hsla(220, 13%, 12%, 0) 100%), hsl(220, 13%, 14%);
-  --bg-gradient-yellow-1: linear-gradient(to bottom right, hsl(200, 100%, 60%) 0%, hsla(200, 100%, 60%, 0) 50%);
-  --bg-gradient-yellow-2: linear-gradient(135deg, hsla(200, 100%, 60%, 0.2) 0%, hsla(200, 100%, 60%, 0) 60%), hsl(220, 13%, 14%);
-  --border-gradient-onyx: linear-gradient(to bottom right, hsl(220, 13%, 24%) 0%, hsla(220, 13%, 24%, 0) 50%);
-  --text-gradient-yellow: linear-gradient(to right, hsl(200, 100%, 65%), hsl(190, 100%, 60%));
-
-  /* Solid colors */
-  --jet: hsl(220, 13%, 24%);
-  --onyx: hsl(220, 13%, 18%);
-  --eerie-black-1: hsl(220, 13%, 14%);
-  --eerie-black-2: hsl(220, 13%, 13%);
-  --smoky-black: hsl(220, 13%, 10%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 97%);
-  --orange-yellow-crayola: hsl(200, 100%, 65%);
-  --vegas-gold: hsl(200, 100%, 55%);
-  --light-gray: hsl(0, 0%, 88%);
-  --light-gray-70: hsla(0, 0%, 88%, 0.7);
-  --bittersweet-shimmer: hsl(0, 70%, 50%);
-
-  /* Typography */
   --ff-poppins: 'Poppins', sans-serif;
+
   --fs-1: 24px;
   --fs-2: 18px;
   --fs-3: 17px;
@@ -56,16 +53,20 @@
   --fw-500: 500;
   --fw-600: 600;
 
-  /* Shadows (lighter) */
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.1);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.1);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.1);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.08);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.1);
+  --shadow-1: 0 4px 16px rgba(0, 0, 0, 0.05);
+  --shadow-2: 0 8px 30px rgba(0, 0, 0, 0.08);
+  --shadow-3: 0 12px 40px rgba(0, 0, 0, 0.1);
+  --shadow-4: 0 16px 60px rgba(0, 0, 0, 0.05);
+  --shadow-5: 0 24px 80px rgba(0, 0, 0, 0.03);
 
-  /* Transitions */
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+}
+
+/* 👇 This is the KEY part that changes the dark background */
+body {
+  background: var(--smoky-black); /* now becomes white */
+  color: var(--white-1); /* text now black */
 }
 
 
